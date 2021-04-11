@@ -9,7 +9,7 @@ const app = express();
 const path = require('path');
 
 //	settings
-app.set('port', 8080);
+app.set('port', process.env.PORT || 8080);
 
 //el views es algo por defecto en express para selecionar
 //the view engine y ejs es para usar logicar de3 programacion
